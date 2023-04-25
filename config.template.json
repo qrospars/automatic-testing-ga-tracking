@@ -1,0 +1,39 @@
+{
+    "actions": [
+        {
+            "type": "click",
+            "selector": "<SELECTOR>",
+            "next": true,
+            "waitFor": 3000
+        },
+        {
+            "type": "click",
+            "selector": "<SELECTOR>",
+            "next": true,
+            "waitFor": 3000
+        }
+    ],
+    "eventsToCheck": [
+        {
+            "name": "Example of UA event",
+            "type": "UA",
+            "eventParameters": {
+                "ec": "<PARAM>",
+                "ea": "<PARAM>",
+                "el": "<PARAM>"
+            }
+        },
+        {
+            "name": "Example of GA4 event",
+            "type": "GA4",
+            "eventParameters": {
+                "en": "<PARAM>",
+                "_p": "<PARAM>",
+                "_s": "<PARAM>"
+            }
+        }
+    ],
+    "headless": "new",
+    "concurrencyLimit": 1,
+    "clearCSV": true
+}
